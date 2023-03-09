@@ -15,9 +15,7 @@
     vertical-align: top;
 }
 #q4{
-    background-color: white; 
-    padding: 25px;
-    
+    padding: 25px;    
 }
 #q5{
     background-color: #9cc1e0;
@@ -30,4 +28,7 @@
 }
 p{
     text-align: justify;
+}
+#q7{
+
 }
