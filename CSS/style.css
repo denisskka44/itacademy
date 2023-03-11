@@ -1,5 +1,72 @@
-#main{
-    max-width: 1200px;
-    background: red;
-    margin: 10px;
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+#footer {
+  position: absolute;
+  left:0;
+  right:0;
+  bottom: 712px;
+  font-size: 20px;
+
+}
+#container {
+  position: relative;
+  width: 1200px;
+  color: white;
+  background-image: url(/fon.jpg);
+  margin: 0 auto;
+  box-shadow:
+  0 1px 40px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .8),
+  23px 0 20px -23px rgba(0, 0, 0, .8),
+  0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.link {
+  text-decoration: none;
+  color: aliceblue;
+}
+a:hover{
+  background-color: rgb(168, 19, 162);
+  
+}
+#q1 {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background: #004d98; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+}
+.q2 {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background: #004d98; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #01366b; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.05s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.05s ease;
+  -webkit-transition: all 0.3s 0.05s ease;
+}
+.q2:hover {
+  background:#a50044;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+.q3 {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background: #004d98; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  -moz-transition: all 0.3s 0.05s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.05s ease;
+  -webkit-transition: all 0.3s 0.05s ease;
+}
+.q3:hover {
+  background:#a50044;/*добавляем эффект при наведении*/
 }
