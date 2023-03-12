@@ -21,7 +21,7 @@ body{
   -23px 0 20px -23px rgba(0, 0, 0, .8),
   23px 0 20px -23px rgba(0, 0, 0, .8),
   0 0 40px rgba(0, 0, 0, .1) inset;
-}
+
 .link {
   text-decoration: none;
   color: aliceblue;
@@ -69,4 +69,26 @@ li {
 }
 .q3:hover {
   background:#a50044;/*добавляем эффект при наведении*/
+}
+#q4{
+  background: black;
+  height: 400px;
+  width: 1200px;
+  margin: 0 auto;
+}
+#q5{
+  background: red;
+  height: 100px;
+  position:relative;
+  font-size: 80px;
+}
+#q6{
+  background: rgba(0, 151, 19, 0.2);
+  height: 100px;
+  width: 1200px;
+  position: absolute;
+  bottom: 68px;
+  text-align: center;
+  font-size: 80px;
+  color: yellow;
 }
