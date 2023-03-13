@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zv {
+            height: 80px;
+        }
+        .zvezda {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-image: url(star0.png);
+            background-repeat: no-repeat;
+        }
+
+        .zv:hover>.zvezda {
+            background-image: url(star1.png);
+        }
+
+        .zvezda:hover~.zvezda {
+            background-image: url(star0.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zv">
+        <div class="zvezda"></div>
+        <div class="zvezda"></div>
+        <div class="zvezda"></div>
+        <div class="zvezda"></div>
+        <div class="zvezda"></div>
+    </div>
+</body>
+
+</html>
