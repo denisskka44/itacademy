@@ -7,47 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
-            border-collapse:collapse;
+        table {
+            border-collapse: collapse;
         }
-        .green1{
-            background: green !important; 
-            width: 15px;
-            height: 15px;
+
+        td:first-child {
+            background: green !important;
+            width: 20px;
+            height: 20px;
         }
-        td{
-            width: 30px;
-            height: 30px;
+
+        td:last-child {
+            background: green !important;
+            width: 20px;
+            height: 20px;
+        }
+
+        tr:first-child {
+            background: green !important;
+
+        }
+
+        tr:last-child {
+            background: green !important;
+        }
+
+        td {
+            width: 40px;
+            height: 40px;
             border: 1px solid black;
         }
-        .chess tr:nth-child(odd) td:nth-child(odd) {
-	background: rgb(0, 0, 0);
-}	
-.chess tr:nth-child(even) td:nth-child(even) {
-	background: rgb(0, 0, 0);
-}
 
+        table tr:first-child {
+            background: green !important;
+        }
 
+        table tr:first-child td:nth-child(odd) {
+            background: green !important;
+
+        }
+
+        table tr:last-child td:nth-child(even) {
+            background: green !important;
+
+        }
+
+        table tr:nth-child(odd) td:nth-child(odd) {
+            background: rgb(0, 0, 0);
+
+        }
+
+        table tr:nth-child(even) td:nth-child(even) {
+            background: rgb(0, 0, 0);
+
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <table class="chess">
+        <table>
             <tr>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -56,10 +88,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -68,10 +100,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -80,10 +112,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -92,10 +124,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -104,10 +136,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -116,10 +148,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -128,10 +160,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -140,19 +172,20 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
-                <td class="green1"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </div>
