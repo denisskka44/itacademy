@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .q1 {
+            width: 100%;
+        }
+
+        .q2 {
+            width: 100%;
+        }
+
+        .q3 {
+            padding: 20px;
+            margin: 20px;
+            line-height: 2;
+        }
+
+        .q4 {
+            width: 15%;
+            float: left;
+        }
+
+        .q5 {
+            width: 85%;
+            float: right;
+        }
+
+        .q6 {}
+
+        .q7 {}
+
+        .q8 {}
+
+        @media all and (max-width: 900px) {
+            .q4 {
+                width: 100%;
+            }
+
+            .q5 {
+                width: 100%;
+            }
+
+            .q6 {
+                font-weight: bold;
+            }
+
+            .q7 {
+                width: 100%;
+            }
+
+            .q8 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="q3">
+        <div class="q6">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <div>
+            <div class="q4"><label for="name">Название статьи:</label></div>
+            <div class="q5"><input type="text" name="nazvanie" class="q2"></div>
+        </div>
+        <div>
+            <div class="q4"><label for="name" class="rub">Рубрика:</label></div>
+            <div class="q5">
+                <select name="rubrika">
+                    <option value="1" class="q7">Программирование</option>
+                    <option value="2" class="q7">Спорт</option>
+                    <option value="3" class="q7">Здоровье</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="q4"><label for="name">Публикация:</label></div>
+            <div class="q5">
+                <label class="q8"><input type="radio" name="rad" value="1">На сайте </label>
+                <label class="q8"><input type="radio" name="rad" value="2">В журнале </label>
+                <label class="q8"><input type="radio" name="rad" value="3">На сайте и в журнале</label>
+            </div>
+        </div>
+        <div>
+<label for="name">Разрешить комментарии:<input type="checkbox" name="onlynew"></label>
+        </div>
+        <div><label for="name">Текст статьи:</label></div>
+        <div><textarea name="mytext" style="width: 100%;"></textarea></div>
+        <div><input type="submit" value="Опубликовать" style="float: left;"></div>
+    </div>
+
+</body>
+
+</html>

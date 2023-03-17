@@ -4,6 +4,14 @@ body{
 p{
     text-align: justify;
 }
+#fi{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    background-color: coral;
+    border: 2px solid black;
+    padding: 20px;
+}
 #q1{
     text-align: center; 
     padding: 20px; 
