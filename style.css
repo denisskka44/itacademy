@@ -1,34 +1,37 @@
-#q1{
+body{
     font-family: Arial, Helvetica, sans-serif;
-}
-#q2{
-    text-align: center; 
-    padding: 20px; 
-    background-color: #9cc1e0;
-    width: 1000px;
-    font-size: 32px;
-}
-#q3{
-    background-color: rgb(218, 151, 131); 
-    padding: 15px;
-    width: 300px;
-    vertical-align: top;
-}
-#q4{
-    padding: 25px;    
-}
-#q5{
-    background-color: #9cc1e0;
-    padding: 15px;
-    color: #494949;
-    font-style: italic;
-}
-#q6{
-    border-spacing: 0px;
 }
 p{
     text-align: justify;
 }
-#q7{
-
+#q1{
+    text-align: center; 
+    padding: 20px; 
+    background-color: #9fdae2; 
+    font-size: 60px; 
+    color: brown; 
+    text-shadow: 5px 5px #828486;
+}
+#q2{
+    float: left; 
+    width: 300px; 
+    background-color: #ad4d4d; 
+    padding: 15px;
+}
+#q3{
+    margin-left: 300px; 
+    background: url(footbal.png) repeat-y right; 
+    padding: 15px;
+}
+#q4{
+    text-transform: uppercase; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 22px;
+}
+#q5{
+    clear: both; 
+    background-color: #9fdae2; 
+    padding: 15px; color: #494949; 
+    font-style: italic;
 }
