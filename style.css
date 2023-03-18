@@ -2,7 +2,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-
+.up{
+    position: fixed; 
+    left: 5%; top: 92%;
+}
+.tabl{
+    display: flex; margin-top: 2%;
+}
+.tabl_sp{
+    width: 25%;
+}
+.inform1{
+    background-color: green; width: 75%;
+}
+.gl_n{
+    background-color: rgb(214, 208, 208); display: flex; font-family: Verdana, sans-serif; border-bottom: 2px double rgb(77, 77, 77);
+}
 a {
     text-decoration: none;
     color: aliceblue;
@@ -40,6 +55,18 @@ a {
 @media all and (max-width: 900px) {
     .main {
         width: 100%;
+    }
+    .up{
+        display: none;
+    }
+    .tabl_sp{
+        display: none;
+    }
+    .inform1{
+        width: 100%;
+    }
+    .gl_n{
+        display: block;
     }
 }
 
