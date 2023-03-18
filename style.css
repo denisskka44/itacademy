@@ -1,29 +1,26 @@
-li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-    padding-top: 15px;
-    font-size: 20px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 a{
     text-decoration: none;
-    padding: 10px;
     color: aliceblue;
 }
-div{
-    background: linear-gradient(to right, #3294e7, #c92674, #4d1c47);
+.p_menu{
+    display: inline-block;
+    padding: 15px;
 }
-a:hover{
+.hed_menu{
+    background-color: #313131ce;
+}
+.main{
+    margin: 0 auto;
+    width: 70%;
+}
+.p_menu:hover{
+    background-color: yellow;
+    padding: 15px;
+}
+.p_menu:hover a{
     color: black;
-    background: yellow;
-    box-shadow: 5px 5px;
-}
-body{
-    margin: -16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-img{
-    width: 7.5%;
-    position: absolute;
-    margin-left: 10px;
 }
