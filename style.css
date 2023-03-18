@@ -18,6 +18,21 @@ body {
 .gl_n{
     background-color: rgb(214, 208, 208); display: flex; font-family: Verdana, sans-serif; border-bottom: 2px double rgb(77, 77, 77);
 }
+.prod{
+    margin-left: 15px; margin-bottom: 25px;
+}
+.opisanie{
+    padding: 15px; text-align: justify; font-size: 15px; color: #0e0d0d; height: 90px;
+}
+.gl_img{
+    width: 30%; margin-left: 2.5%; margin-bottom: 3%;  background-color: aliceblue; box-shadow: 10px 5px 5px rgba(59, 59, 59, 0.726);
+}
+.nov{
+    background-color: rgb(214, 208, 208); font-family: Verdana, sans-serif; font-size: 26px; padding-top: 25px; padding-left: 50px; padding-bottom: 20px;
+}
+.imgnov{
+    width: 93%; margin: 15px;
+}
 a {
     text-decoration: none;
     color: aliceblue;
@@ -51,12 +66,8 @@ a {
     color: aliceblue;
 
 }
-
-@media all and (max-width: 900px) {
-    .main {
-        width: 100%;
-    }
-    .up{
+@media all and (max-width: 1400px){
+    .prod{
         display: none;
     }
     .tabl_sp{
@@ -66,7 +77,25 @@ a {
         width: 100%;
     }
     .gl_n{
-        display: block;
+        display: inline; 
+    }
+    .gl_img{
+        width: 96%;
+    }
+    .nov{
+        background-color: white;
+    }
+
+}
+@media all and (max-width: 900px) {
+    .main {
+        width: 100%;
+    }
+    .up{
+        display: none;
+    }
+    .p_menu{
+        display: none;
     }
 }
 
@@ -74,9 +103,12 @@ a {
     .main {
         width: 100%;
     }
-
-    .p_menu {
-        display: table;
+    .imgnov{
+        display: none;
+    }
+    .opisanie{
+        font-size: 12px;
+        font-weight: bold;
     }
 }
 
