@@ -5,7 +5,7 @@ p{
     text-align: justify;
 }
 #fi{
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 80%;
     background-color: coral;
