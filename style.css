@@ -7,7 +7,7 @@ p{
 #fi{
     position: fixed;
     top: 10%;
-    left: 80%;
+    right: 10%;
     background-color: coral;
     border: 2px solid black;
     padding: 20px;
