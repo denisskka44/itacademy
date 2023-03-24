@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif
         }
-        p{
+
+        p {
             text-align: justify;
         }
+
         .header {
             display: grid;
             text-align: center;
@@ -22,60 +25,140 @@
             color: brown;
             text-shadow: 5px 5px #828486;
         }
-        .main{
+
+        .main {
             display: grid;
             grid-template-columns: 300px 1fr;
         }
+
+        .main3 {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            visibility: hidden;
+        }
+
         .mtext {
             color: aliceblue;
             font-size: 22px;
             text-align: center;
         }
-        .menu_href{
-            color: aliceblue; 
+
+        .menu_href {
+            color: aliceblue;
             line-height: 2;
         }
-        .menu_li{
+
+        .menu_li {
             color: aliceblue;
         }
+
         .lmenu {
             float: left;
             width: 300px;
             background-color: #ad4d4d;
             padding: 15px;
         }
+
         .photo {
             float: left;
             width: 22%;
             margin: 0px 18px 0px 0px;
         }
+
         .zag {
             text-transform: uppercase;
             text-align: center;
             font-weight: bold;
             font-size: 22px;
         }
-        .main2{
+
+        .main2 {
             background: url(footbal.png) repeat-y right;
-            padding: 15px;
+            padding-left: 70px;
         }
 
+        .footer {
+            display: grid;
+            clear: both;
+            background-color: #9fdae2;
+            padding: 15px;
+            color: #494949;
+            font-style: italic;
+        }
+
+        @media all and (max-width: 1400px) {
+            .main2 {
+                background-image: none;
+            }
+        }
+
+        @media all and (max-width: 850px) {
+            .header {
+                display: none;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .main {
+                display: block;
+            }
+
+            .photo {
+                float: none;
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+            }
+            .lmenu{
+                display: none;
+            }
+            .lmenu2 {
+
+                float: none;
+                width: 100%;
+                background-color: white;
+            }
+
+            .main2 {
+                padding: 20px;
+            }
+
+            .mtext2 {
+                color: rgb(2, 2, 2);
+                font-size: 22px;
+                text-align: center;
+            }
+
+            .menu_href2 {
+                color: rgb(5, 5, 5);
+                line-height: 2;
+            }
+
+            .menu_li2 {
+                color: rgb(53, 22, 189);
+            }
+            .main3{
+                visibility: visible;
+            }
+        }
     </style>
 </head>
+
 <body>
-<div class="header">ФК "Сморгонь"</div>
-<div class="main">
-<div class="lmenu">
-    <p class="mtext">МЕНЮ</p>
-        <ul class="menu_href">
-            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">Новости клуба</a></li>
-            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">История</a></li>
-            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">Мы в соц сетях</a></li>
-            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">Рассписание матчей</a></li>
-        </ul>
-</div>
-<div class="main2">
-    <p class="zag">Яркое завершение сезона</p>
+    <div class="header">ФК "Сморгонь"</div>
+    <div class="main">
+        <div class="lmenu">
+            <p class="mtext">МЕНЮ</p>
+            <ul class="menu_href">
+                <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">Новости клуба</a></li>
+                <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">История</a></li>
+                <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">Мы в соц сетях</a></li>
+                <li><a href="https://vk.com/fcsmorgon_official" class="menu_li">Рассписание матчей</a></li>
+            </ul>
+        </div>
+        <div class="main2">
+            <p class="zag">Яркое завершение сезона</p>
             <img src="1.jpg" class="photo">
             <p>Сегодня на стадионе «Юность» состоялся последний матч сезона чемпионата Беларуси по футболу среди
                 команд первой лиги. ФК «Сморгонь» одержала победу над пинской «Волной» со счётом 2:0.</p>
@@ -98,7 +181,19 @@
                 протяжении всего сезона. Желающие смогли сфотографироваться с игроками и получить автографы. И
                 несмотря на то, что «Сморгонь» выходит в высшую лигу со второй строчки, для каждого болельщика наша
                 команда – победители, а этот зрелищный матч запомнят да долго.</p>
-</div>
-</div>
+        </div>
+    </div>
+<div class="footer">Будьте всегда с нами и болейте за наш клуб. </div>
+<div class="main3">
+    <div class="lmenu2">
+        <p class="mtext2">МЕНЮ</p>
+        <ul class="menu_href2">
+            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li2">Новости клуба</a></li>
+            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li2">История</a></li>
+            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li2">Мы в соц сетях</a></li>
+            <li><a href="https://vk.com/fcsmorgon_official" class="menu_li2">Рассписание матчей</a></li>
+        </ul>
+    </div>
 </body>
+
 </html>
