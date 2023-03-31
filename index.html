@@ -7,12 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .main {
+            width: 35%;
+            background-color: rgb(90, 91, 92);
+        }
 
+        @keyframes animation1 {
+            from {
+                background-color: rgb(6, 126, 22);
+            }
+
+            to {
+                background-color: rgb(201, 23, 23);
+            }
+        }
+
+        .anim1 {
+            color: white;
+            border-radius: 50px;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: animation1 3s infinite;
+        }
+
+        .anim2 {
+            background-color: rgb(72, 174, 214);
+            color: rgb(124, 13, 96);
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            transition-duration: 2s;
+            border-radius: 10px;
+            border: 2px solid blue;
+        }
+
+        div:hover span{
+            background-color: rgb(139, 22, 22);
+            color: rgb(198, 198, 204);
+            border-radius: 30px;
+            border: 2px solid rgb(166, 192, 21);
+        }
+        .anim3{
+            width: 70%;
+            border-radius: 30px;
+            transition-duration: 2s;
+        }
+        div:hover img{
+            border-radius: 170px;
+            width: 87%;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="main">
+        <p class="anim1">Это самая лучшая анимация во всём интернете, потому что её сделал я</p>
+        <span class="anim2">А это ещё одна анимашка</span>
+        <br><br><br><br><br>
+        <img src="1.jpg" class="anim3">
+    </div>
 </body>
 
 </html>
