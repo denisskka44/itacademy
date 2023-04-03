@@ -20,7 +20,7 @@
         var gender = confirm("Ваш пол - мужской?");
         (gender == true) ? gender = "Ваш пол: мужской " : gender = "Ваш пол: женский ";
         (gender == true && age >= 63) ? pensAge = "Да" : pensAge = "Нет";
-        (gender != true && age >= 55) ? pensAge = "Да" : pensAge = "Нет";
+        (gender != true && age >= 58) ? pensAge = "Да" : pensAge = "Нет";
         alert('ФИО: ' + name + ' ' + surname + ' ' + patronymic + '\n\r ' + 'Ваш возраст в годах: ' + age + '\n\r ' + 'Ваш возраст в днях: ' + ageDate + '\n\r ' + gender + '\n\r ' + 'Вы на пенсии: ' + pensAge + '\n\r' + 'Через 5 лет вам будет: ' + five);
     </script>
 </body>
