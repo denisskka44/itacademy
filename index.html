@@ -19,9 +19,9 @@
         var five = age + 5
         var gender = confirm("Ваш пол - мужской?");
         (gender == true) ? gender = "Ваш пол: мужской " : gender = "Ваш пол: женский ";
-        (gender == true && age >= 63) ? pensAge = "Да" : pensAge = "Нет";
-        (gender != true && age >= 58) ? pensAge = "Да" : pensAge = "Нет";
-        alert('ФИО: ' + name + ' ' + surname + ' ' + patronymic + '\n' + 'Ваш возраст в годах: ' + age + '\n' + 'Ваш возраст в днях: ' + ageDate + '\n' + gender + '\n' + 'Вы на пенсии: ' + pensAge + '\n' + 'Через 5 лет вам будет: ' + five);
+        (gender == true && age >= 63) ? pension = "Да" : pension = "Нет";
+        (gender != true && age >= 58) ? pension = "Да" : pension = "Нет";
+        alert('ФИО: ' + name + ' ' + surname + ' ' + patronymic + '\n' + 'Ваш возраст в годах: ' + age + '\n' + 'Ваш возраст в днях: ' + ageDate + '\n' + gender + '\n' + 'Вы на пенсии: ' + pension + '\n' + 'Через 5 лет вам будет: ' + five);
     </script>
 </body>
 
