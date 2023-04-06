@@ -1,29 +1,48 @@
-var countrysH={};
+var CountrysH={};
 
-function addCountry(countryName,capitalName) {
-    countrysH[countryName]=capitalName;
+function AddCountry(CountryName,CapitalName) {
+	CountrysH[CountryName]=CapitalName;
 }
 
-function deleteCountry(countryName) {
-    delete countrysH[countryName];
+function DeleteCountry(CountryName) {
+	delete CountrysH[CountryName];
 }
 
-function getCountryInfo(countryName) {
-    if ( countryName in countrysH )
-        return 'страна: ' + countryName + ' столица: ' + countrysH[countryName] ;
-    else
-        return 'нет информации о стране ' + countryName + '!' ;
+function GetCountryInfo(CountryName) {
+	if ( CountryName in CountrysH )
+		return 'СТРАНА: ' + CountryName + ' СТОЛИЦА: ' + CountrysH[CountryName] ;
+	else
+		return 'НЕТ ИНФОРМАЦИИ О СТРАНЕ ' + CountryName + '!' ;
 }
 
-function listCountrys() {
-    var res="";
-    for ( var CN in countrysH )
-        res+='\n'+getCountryInfo(CN);
-    return res;
+function ListCountrys() {
+	var Res="";
+	for ( var CN in CountrysH )
+		Res+='\n'+GetCountryInfo(CN);
+	return Res;
 }
 
-addCountry('Германия','Берлин');
-addCountry('Венгрия','Будапешт');
-addCountry('Франция','Париж');
+function addCountry() {
+    var CountryName=prompt('Страна');
+    var CapitalName=prompt('Столица');
+    AddCountry(CountryName,CapitalName);
+}
 
-console.log( "список стран:" + listCountrys() );
+function infoAboutCountry() {
+    var CountryName=prompt('Название страны ');
+    alert(GetCountryInfo(CountryName));
+}
+
+function allCountries() {
+    alert(ListCountrys());
+}
+
+function delCountry() {
+    var CountryName=prompt('Название страны ');
+    if (CountryName in CountrysH) {
+        DeleteCountry(CountryName);
+        alert(' Удалено ');
+    } else {
+        alert('Страны не найдено');
+    }
+}
