@@ -4,4 +4,12 @@ body{
 .menu{
     background-color: brown;
     width: 943px;
+    position: absolute;
+margin: auto 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
