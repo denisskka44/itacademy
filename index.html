@@ -1,42 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page" id="home">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denis Novik – UX/UI designer</title>
+
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="./css/nozmalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="menu">
-        <div class="one" style="text-align: left;">Home</div>
-        <div class="one" style="text-align: center;">About me</div>
-        <div class="one" style="text-align: center;">Skills</div>
-        <div class="one" style="text-align: center;">Portfolio</div>
-        <div class="one" style="text-align: right;">Contacts</div>
+  <header class="header">
+    <div class="container header__container container_underline">
+       <div class="header__burger burger">
+        <img src="./images/icons/burger.svg" alt="" class="burger__icon">
+       </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li>
+            <a href="#home" class="menu__link menu__link_active">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="menu__link">About me</a>
+          </li>
+          <li>
+            <a href="#skills" class="menu__link">Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="menu__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contacts" class="menu__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="header">
-        <div class="name" style="text-align: left;">Denis <br>Novik</div>
-        <div class="old" style="text-align: left;">UX | UI designer <br>24 years old, Minsk</div>
-        <div class="lang" style="text-align: right;"><span class="lang_hov">RUS</span>|<span class="lang_hov">ENG</span></div>
+  </header>
+  <main class="content">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h2 class="hero__title">
+            Denis <br>
+            Novik
+          </h2>
+          <p class="hero__text">
+            UX | UI designer <br>
+            24 years old, <br> 
+            Minsk
+          </p>
+          <div class="choose-language">
+            <p class="language">RU</p>
+            <div class="devider">|</div>
+            <p class="language language_active">ENG</p>
+          </div>
+        </div>
+        <img src="./images/hero.jpg" alt="" class="hero__image hero__image_desktop">
+        <img src="./images/hero-mobile.png" alt="" class="hero__image hero__image_mobile">
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <h2 class="title">About me</h2>
+        <p class="text">
+          Hi, I'm Denis – UX/UI designer from Minsk. <br>
+          I'm interested in design and everything connected with it.
+        </p>
+        <p class="text">
+          I'm studying at courses "Web and mobile design <br>
+          interfaces" in IT-Academy.
+        </p>
+        <p class="text">
+          Ready to implement excellent projects <br>
+          with wonderful people.
+        </p>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container skills__container">
+        <h2 class="title">Skills</h2>
+        <p class="text">I work in such programs as</p>
+        <ul class="skills__list">
+          <li class="skill">
+            <img src="./images/skills/photoshop-logo.svg" alt="" class="skill__image">
+            <h3 class="skill__title">Abobe <br> Photoshop</h3>
+            <div class="skill__level">
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star"></div>
+            </div>
+          </li>
+          <li class="skill">
+            <img src="./images/skills/illustrator-logo.svg" alt="" class="skill__image">
+            <h3 class="skill__title">Adobe <br> Illustrator</h3>
+            <div class="skill__level">
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+          </li>
+          <li class="skill">
+            <img src="./images/skills/after-effects-logo.svg" alt="" class="skill__image">
+            <h3 class="skill__title">Adobe <br> After <br> Effects</h3>
+            <div class="skill__level">
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star"></div>
+            </div>
+          </li>
+          <li class="skill">
+            <img src="./images/skills/figma-logo.svg" alt="" class="skill__image">
+            <h3 class="skill__title">Figma</h3>
+            <div class="skill__level">
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star star_filled"></div>
+              <div class="star"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container portfolio__container">
+        <h2 class="title">Portfolio</h2>
+        <div class="portfolio__content">
+          <div class="project">
+            <img src="./images/portfolio/levis.jpg" alt="" class="project__image" width="936" height="510">
+            <a href="" class="project__link">Online fashion store - Homepage</a>
+          </div>
+          <div class="project">
+            <img src="./images/portfolio/reebok.jpg" alt="" class="project__image" width="936" height="510">
+            <a href="" class="project__link">Reebok Store - Concept</a>
+          </div>
+          <div class="project">
+            <img src="./images/portfolio/braun.jpg" alt="" class="project__image" width="936" height="510">
+            <a href="" class="project__link">Braun Landing Page - Concept</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="container footer__container">
+      <div class="footer__contacts">
+        <h2 class="title">Contacts</h2>
+        <p class="text">
+          Want to know more or just chat? <br>
+          You are welcome!
+        </p>
+        <a class="button" href="">Send message</a>
+      </div>
+      <div class="footer__links">
+        <ul class="footer__list">
+          <li>
+            <img src="./images/icons/linkedin.svg" alt="">
+          </li>
+          <li>
+            <img src="./images/icons/instagram.svg" alt="">
+          </li>
+          <li>
+            <img src="./images/icons/behance.svg" alt="">
+          </li>
+          <li>
+            <img src="./images/icons/dribble.svg" alt="">
+          </li>
+        </ul>
+        <p class="footer__text">
+          Like me on <br>
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
     </div>
-    <div class="image">
-        <img src="BSPP2266.png" alt="">
+  </footer>
+  <div class="burger__page burger__page_hidden">
+    <div class="burger__content">
+      <div class="burger__buttons">
+        <img src="./images/icons/close.svg" alt="" class="burger__close">
+      </div>
+    <nav class="burger__menu">
+      <ul class="burger__list">
+        <li>
+          <a href="#home" class="burger__link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="burger__link">About me</a>
+        </li>
+        <li>
+          <a href="#skills" class="burger__link">Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="burger__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contacts" class="burger__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
     </div>
-    <div class="about_me">
-        <p class="title">About me</p>
-        <p style="text-align: center;">Hi, I'm Denis – UX/UI designer from Minsk. <br>I'm interested in design and everything connected with it.</p><br>
-        <p style="text-align: center;">I'm studying at courses "Web and mobile design <br>interfaces" in IT-Academy.</p><br>
-        <p style="text-align: center;">Ready to implement excellent projects <br>with wonderful people.</p>
-    </div>
-    <div>
-        1
-    </div>
+  </div>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/burger.js"></script>
 </body>
-
-</html>
+</html> 
