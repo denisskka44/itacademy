@@ -6,14 +6,13 @@
   --text-white-color: #FFFFFF;
   --primary-color: #070707;
   --secondary-color: #828282;
-  --font-family: "Roboto";
-  --font-weight: 900;
-  --font-size-smallest: 14px;
-  --font-size-small: 16px;
-  --font-size-medium: 18px;
-  --font-size-large: 34px;
-  --font-size-largest: 47px;
-  --container-max-width: 945px;
+  --font-weight: 700;
+  --font-size-smallest: 16px;
+  --font-size-small: 18px;
+  --font-size-medium: 20px;
+  --font-size-large: 20px;
+  --font-size-largest: 45px;
+  --container-max-width: 980px;
 }
 
 *, *::before, *::after {
@@ -24,6 +23,10 @@
 
 ul {
   list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -63,7 +66,6 @@ a {
 }
 
 .header {
-  position: sticky;
   top: 0px;
   background-color: var(--background-light);
   z-index: 5;
@@ -277,7 +279,7 @@ a {
   text-align: center;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 460px) {
   
   .container {
     max-width: 316px;
