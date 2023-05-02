@@ -1,11 +1,4 @@
-/* Fonts */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:900&display=swap);
-
-/* Variables */
-
 :root {
-  /* Colors */
   --background-light: #FFFFFF;
   --background-dark: #F6F6F6;
   --text-dark-color: #070707;
@@ -13,8 +6,6 @@
   --text-white-color: #FFFFFF;
   --primary-color: #070707;
   --secondary-color: #828282;
-
-  /* Font */
   --font-family: "Roboto";
   --font-weight: 900;
   --font-size-smallest: 14px;
@@ -22,16 +13,10 @@
   --font-size-medium: 18px;
   --font-size-large: 34px;
   --font-size-largest: 47px;
-
-  /* Size */
   --container-max-width: 945px;
 }
 
-/* Global */
-
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -77,8 +62,6 @@ a {
   font-size: var(--font-size-medium);
 }
 
-/* Header */
-
 .header {
   position: sticky;
   top: 0px;
@@ -86,51 +69,47 @@ a {
   z-index: 5;
 }
 
-.header__container {
+.header1 {
   padding: 33px 10px;
 }
 
-.container_underline {
+.container1 {
   border-bottom: 1px solid var(--secondary-color);
 }
 
-.header__burger {
+.hb {
   display: none;
 }
 
-.burger__icon {
+.burgerIcon {
   cursor: pointer;
 }
 
-.burger__page {
+.bPage {
   display: none;
 }
 
-.menu__list {
+.menuList {
   display: flex;
   justify-content: space-between;
 }
 
-.menu__link {
+.mLink {
   font-size: var(--font-size-medium);
   color: var(--text-light-color);
 }
 
-.menu__link_active {
+.mActive {
   color: var(--text-dark-color);
 }
 
-/* Main content */
-
-/* Hero section */
-
-.hero__content {
+.den2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.hero__container {
+.den {
   padding-top: 40px;
   padding-bottom: 105px;
   display: grid;
@@ -138,25 +117,25 @@ a {
   row-gap: 30px;
 }
 
-.hero__title {
+.titleDen {
   font-size: var(--font-size-largest);
 }
 
-.hero_text {
+.denText {
   font-size: var(--font-size-medium);
   text-align: left;
 }
 
-.hero__image {
+.denImage {
   width: 100%;
   height: auto;
 }
 
-.hero__image_mobile {
+.imageMobile {
   display: none;
 }
 
-.choose-language {
+.Lang {
   display: flex;
   width: 20px;
   transform: rotate(-90deg);
@@ -168,21 +147,19 @@ a {
   color: var(--text-light-color);
 }
 
-.language_active {
+.langActive {
   color: var(--text-dark-color);
 }
 
-.devider {
+.slash {
   margin: 0 5px;
 }
-
-/* About */
 
 .about {
   background-color: var(--background-dark);
 }
 
-.about__container {
+.about2 {
   padding-top: 120px;
   padding-bottom: 114px;
   display: grid;
@@ -190,21 +167,19 @@ a {
   row-gap: 30px;
 }
 
-/* Skills */
-
-.skills__container {
+.skills2 {
   padding: 100px 10px;
   display: grid;
   grid-template-rows: repeat(3, max-content);
   row-gap: 70px;
 }
 
-.skills__list {
+.sList {
   display: flex;
   justify-content: space-between;
 }
 
-.skill__level {
+.level {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 10px;
@@ -218,7 +193,7 @@ a {
   align-content: space-between;
 }
 
-.skill__title {
+.sTitle {
   font-size: var(--font-size-smallest);
   color: var(--text-light-color);
   text-align: center;
@@ -227,29 +202,27 @@ a {
 .star {
   width: 26px;
   height: 26px;
-  background-image: url("../images/icons/star.svg");
+  background-image: url("../images/star.svg");
   background-repeat: no-repeat;
   background-size: 26px;
 }
 
-.star_filled {
-  background-image: url("../images/icons/filled-star.svg");
+.starBlack {
+  background-image: url("../images/filled-star.svg");
 }
-
-/* Portfolio */
 
 .portfolio {
   background-color: var(--background-dark);
 }
 
-.portfolio__container {
+.portfolio2 {
   padding: 100px 10px;
   display: grid;
   grid-template-rows: repeat(2, max-content);
   row-gap: 45px;
 }
 
-.portfolio__content {
+.pContent {
   display: grid;
   grid-template-rows: repeat(3, max-content);
   row-gap: 100px;
@@ -262,19 +235,17 @@ a {
   justify-items: center;
 }
 
-.project__image {
+.pImage {
   width: 100%;
   height: auto;
 }
 
-.project__link {
+.project2 {
   font-size: var(--font-size-medium);
   text-decoration: underline;
 }
 
-/* Footer */
-
-.footer__container {
+.footer2 {
   max-width: 342px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -282,31 +253,29 @@ a {
   padding: 100px 0;
 }
 
-.footer__contacts {
+.contacts {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   row-gap: 20px;
 }
 
-.footer__links {
+.footer3 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   row-gap: 45px;
 }
 
-.footer__list {
+.fList {
   display: flex;
   justify-content: space-between;
 }
 
-.footer__text {
+.fText {
   font-size: var(--font-size-smallest);
   color: var(--text-light-color);
   text-align: center;
 }
-
-/* Mobile adaptability */
 
 @media (max-width: 375px) {
   
@@ -318,17 +287,17 @@ a {
     display: none;
   }
 
-  .header__container {
+  .header1 {
     display: flex;
     justify-content: flex-end;
     border: none;
   }
 
-  .header__burger {
+  .hb {
     display: block;
   }
 
-  .burger__page {
+  .bPage {
     display: block;
     position: fixed;
     width: 100vw;
@@ -341,53 +310,53 @@ a {
     background-color: var(--background-light);
   }
 
-  .burger__content {
+  .bContent {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 60px 30px;
   }
 
-  .burger__list {
+  .bList {
     display: grid;
     grid-template-rows: repeat(5, max-content);
     row-gap: 60px;
   }
 
-  .burger__buttons {
+  .bButton {
     order: 1;
     cursor: pointer;
   }
 
-  .burger__page_hidden {
+  .pHidden {
     display: none;
   }
 
-  .burger__link {
+  .bLink {
     font-size: var(--font-size-large);
   }
 
-  .hero__image_mobile {
+  .imageMobile {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .hero__image_desktop {
+  .imageDesktop {
     display: none;
   }
 
-  .hero__content {
+  .den2 {
     display: grid;
     grid-template-rows: repeat(3, max-content);
     row-gap: 20px;
   }
 
-  .choose-language {
+  .Lang {
     display: none;
   }
 
-  .skills__list {
+  .sList {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 80px;

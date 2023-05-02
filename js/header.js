@@ -1,9 +1,9 @@
 
 const sections = document.querySelectorAll("section");
 const footer = document.querySelector("footer");
-const links = document.querySelectorAll(".menu__link");
+const links = document.querySelectorAll(".mLink");
 let areas = [...sections, footer];
-const activeLinkClass = "menu__link_active";
+const activeLinkClass = "mActive";
 const browserHeight = window.innerHeight;
 
 function changeActiveLink(target) {
