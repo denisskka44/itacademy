@@ -17,10 +17,50 @@ body {
 .menu {
     float: right;
     display: flex;
+    margin-right: 5%;
 }
 .mList {
     padding: 25px;
     margin-left: 50px;
     font-weight: bold;
     color: #141323;
+}
+.imLogo {
+    float: right; 
+    height: 50%; 
+    margin-right: 10%; 
+    margin-top: 2%;
+}
+.lHeader {
+    float: left;
+    margin-left: 75px;
+    margin-top: 2%;
+}
+.textHeader {
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+.textOther {
+    line-height: 3em;
+}
+.headerButton {
+    display: flex;
+}
+.buttonL {
+    background-color: #DA6B62;
+    padding: 15px;
+    border-radius: 15px 0 15px 0;
+    color: white;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttonR {
+    border: 2px solid #DA6B62;
+    padding: 15px;
+    border-radius: 15px 0 15px 0;
+    width: 200px;
+    text-align: center;
+    margin-left: 8%;
+    cursor: pointer;
 }
