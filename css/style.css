@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 1000px;
 }
 .header {
     height: 70px;
-    display: flex;
     border-bottom: 2px solid #DA6B62;
 }
 .logo {
@@ -12,10 +12,10 @@ body {
     padding-top: 10px;
 }
 .logoPosition {
-    width: 49%;
+    float: left;
 }
 .menu {
-    width: 50%;
+    float: right;
     display: flex;
 }
 .mList {
@@ -23,8 +23,4 @@ body {
     margin-left: 50px;
     font-weight: bold;
     color: #141323;
-}
-.ImLogo {
-    left: 500px;
-    z-index: -5;
 }
