@@ -1,101 +1,253 @@
-:root{
+:root {
     --white: #f9f9f9;
     --red: #ee6e73;
     --grey: #f3f3f3;
     --grey2: #4a7ed8;
     --grey3: #2a2a2a;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Exo 2', sans-serif;
     min-width: 320px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
-    list-style: none; 
+
+li {
+    list-style: none;
 }
+
 .map {
     padding: 5px 20px;
     background-color: #e2dfdf;
 }
-.pattern {
+
+.windowNews {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-wrap: wrap;
 }
-.child {
-    width: 20%;
+
+.headingNews {
+    text-align: left; 
+    padding-top: 2%; 
+    padding-left: 2%;
+    font-size: 1.7vw; 
+    font-weight: bold; 
+    color: #303030;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.pict {
+    max-width: 100%;
+}
+
+.description {
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 10%; 
+    padding-top: 5%;
+    text-align: justify; 
+    border-top: 2px solid #2a2a2a57;
+}
+
+.bNews {
+    width: 33%;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #264e94;
+    color: #e2dfdf;
+}
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Подпись под изображением */
+.text {
+    color: #ffffff;
+    font-size: 2vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    padding-left: 3%;
+    background-color: #2a2a2ab4;
+}
+
+/* Выцветание анимации */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.CampNou {
+    display: flex; 
+    flex-flow: row nowrap; 
+    padding: 15px; 
+    background-color: #c2c2c2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.descStadion {
+    width: 75%; 
+    padding-left: 4%;
+}
+.headDesc {
+    font-size: 20px; 
+    color: #3b3b3b;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+.textDesc {
+    color: #3b3b3b; 
+    text-align: justify; 
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+
+.awards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 50px; 
+    justify-content: center;
+}
+
+.imgAwards {
+    width: 250px;
+    height: 310px; 
+    margin: 0 auto;
+    overflow: hidden; 
+}
+.imageA {
+    max-width: 100%; 
+}
+.textA {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #3b3b3b; 
+    text-align: center; 
+    margin: 15px;
+}
+
+.testA2 {
+    font-size: 65px; 
+    font-weight: bold; 
+    color: #3b3b3b; 
+    text-align: center;
+}
+.window {
+    width: 320px;
+    margin: 0 auto;
     background-color: #e2dfdf;
-    margin-left: 2%;
     margin-top: 3%;
     margin-bottom: 3%;
-    margin-right: 2%;
     overflow: hidden;
-    box-shadow: 4px 4px rgba(78, 78, 78, 0.808);
-  }
-  .child:hover{
-    
+}
+
+.window .bNews:hover {
+
     cursor: pointer;
-    box-shadow: 0px 0px 29px 15px rgba(38, 78, 148, 0.69);
-  }
-  .stadion {
-    width: 25%; 
-    overflow: hidden; 
-    margin-left: 2%;
-  }
-  .im_stad {
+    background-color: #8d0943;
+    color: #e2dfdf;
+}
+
+.stadion {
+    width: 25%;
+    overflow: hidden;
+    
+}
+
+.im_stad {
     transition: transform 0.5s;
     max-width: 100%;
-  }
-  .im_stad:hover { 
-    transform: scale(1.2); 
 }
+
+.im_stad:hover {
+    transform: scale(1.2);
+}
+
 .logo {
     font-family: 'Kalam', cursive;
     font-size: 30px;
     color: #eccd1c;
     font-weight: bold;
 }
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px;
     background: linear-gradient(to right, #264e94, #8d0943);
-    /*background-color: var(--red);*/
+    max-width: 1200px;
+    margin: 0 auto;
     color: var(--white);
 }
+
 .nav_links a {
     color: var(--white);
 }
+
 .menu {
     display: flex;
     font-size: 20px;
 }
+
 .menu li {
     padding: 5px 15px;
 }
+
 .menu li a:hover {
     transition: all .5s;
     color: #eccd1c;
 }
+
 .menu li:hover {
     transition: all .5s;
     border-bottom: 1px solid #eccd1c;
 }
+
 #checkbox_toggle {
     display: none;
 }
+
 .hamburger {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
+
 .hamburger_line {
     background-color: var(--white);
     display: block;
@@ -104,6 +256,7 @@ li{
     width: 24px;
 
 }
+
 .hamburger_line::before,
 .hamburger_line::after {
     background-color: var(--white);
@@ -113,16 +266,60 @@ li{
     transition: all .5s;
     width: 100%;
     height: 100%;
-} 
+}
+
 .hamburger_line::before {
     top: 7px;
 }
+
 .hamburger_line::after {
     top: -7px;
 }
+@media (max-width: 1150px){
+    .headDesc {
+        font-size: 18px; 
+    }
+    .textDesc {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1000px){
+    .windowNews {
+        display: block;
+    }
+    .headDesc {
+        font-size: 16px; 
+    }
+    .textDesc {
+        font-size: 9px;
+    }
+    .window {
+        width: 100%;
+        height: 110px;
+        margin: 0 auto;
+        background-color: #e2dfdf;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        overflow: hidden;
+    }
+    .pict {
+        display: none;
+    }
+    .bNews {
+        display: none;
+    }
+    .description {
+        width: 95%;
+        margin: 0 auto;
+        text-align: justify; 
+        border-top: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+}
 @media (max-width: 768px) {
     .menu {
-        /*display: none;*/
         max-height: 0;
         overflow: hidden;
         position: absolute;
@@ -132,38 +329,87 @@ li{
         left: 0;
         margin-top: 20px;
     }
+
     .menu li a {
         color: var(--grey3);
         display: block;
         padding: 15px;
     }
+
     .menu li {
         transition: all .5s;
     }
-    .menu li:hover{
+
+    .menu li:hover {
         background-color: var(--grey2);
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         padding: 20px 0px;
     }
-    #checkbox_toggle:checked ~ .menu{
+    .CampNou {
+        display: block; 
+    }
+    .stadion {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .descStadion {
+        width: 100%;
+        padding: 20px;
+    }
+    #checkbox_toggle:checked~.menu {
         display: block;
         max-height: 100%;
         transition: all .5s;
     }
-    #checkbox_toggle:checked ~ .hamburger .hamburger_line {
+
+    #checkbox_toggle:checked~.hamburger .hamburger_line {
         background-color: transparent;
     }
-    #checkbox_toggle:checked ~ .hamburger .hamburger_line::before {
+
+    #checkbox_toggle:checked~.hamburger .hamburger_line::before {
         transform: rotate(-45deg);
         top: 0;
     }
-    #checkbox_toggle:checked ~ .hamburger .hamburger_line::after {
+
+    #checkbox_toggle:checked~.hamburger .hamburger_line::after {
         transform: rotate(45deg);
         top: 0;
     }
+
     .map {
         display: none;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Для маленьких экранов увеличьте размер текста  */
+@media only screen and (max-width: 768px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
     }
 }
