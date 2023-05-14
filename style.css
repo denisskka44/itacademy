@@ -86,8 +86,6 @@ img {
     margin: auto;
 }
 
-
-/* Подпись под изображением */
 .text {
     color: #ffffff;
     font-size: 2vw;
@@ -101,7 +99,6 @@ img {
     background-color: #2a2a2ab4;
 }
 
-/* Выцветание анимации */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -422,7 +419,6 @@ img {
     }
 }
 
-/* Для маленьких экранов увеличьте размер текста  */
 @media only screen and (max-width: 768px) {
 
     .prev,
