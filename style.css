@@ -166,6 +166,15 @@ img {
     color: #3b3b3b; 
     text-align: center;
 }
+.videoBlock {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+.Vbarca {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .window {
     width: 320px;
     margin: 0 auto;
@@ -293,6 +302,10 @@ img {
     .textDesc {
         font-size: 9px;
     }
+    .videoBlock {
+        width: 560px;
+        height: 315px;
+    }
     .window {
         width: 100%;
         height: 110px;
@@ -383,7 +396,12 @@ img {
         display: none;
     }
 }
-
+@media (max-width: 560px){
+.videoBlock{
+    width: 300px;
+    height: 180px;
+}
+}
 @-webkit-keyframes fade {
     from {
         opacity: .4
