@@ -338,6 +338,7 @@ img {
         right: 0;
         left: 0;
         margin-top: 20px;
+        z-index: 1;
     }
 
     .menu li a {
