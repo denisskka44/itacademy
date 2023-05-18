@@ -19,6 +19,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #c2c2c2;
 }
 
 li {
@@ -281,6 +282,62 @@ img {
 .hamburger_line::after {
     top: -7px;
 }
+
+
+.selection__button {
+    font-family: 'Exo 2', sans-serif;
+    margin: 5%;
+   background-color: transparent;
+   border: 2px solid #264e94;
+   color: #264e94;
+   font-weight: 700;
+   padding: 10px 20px;
+   cursor: pointer;
+   outline: 2px solid transparent;
+   outline-offset: 3px;
+   transition: background-color .2s ease-in-out, color .2s ease-in-out;    
+}
+ 
+.selection__button:hover {
+    background-color: #264e94;
+    color: #e2dfdf;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(42, 42, 42, 0.616);
+    cursor: pointer;
+    padding: 20px;
+    overflow-y: auto;
+    display: none;
+}
+
+.modal__main {
+    position: relative;
+    max-width: 600px;
+    background-color: #e2dfdf;
+    margin: auto;
+    border-radius: 15px;
+    padding: 30px;
+    cursor: default;
+}
+
+.modal__title {
+    margin-bottom: 30px;
+}
+
+.modal__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-style: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
 @media (max-width: 1150px){
     .headDesc {
         font-size: 18px; 
