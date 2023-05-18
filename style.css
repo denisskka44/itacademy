@@ -306,37 +306,53 @@ img {
 .modal {
     position: fixed;
     inset: 0;
-    background-color: rgba(42, 42, 42, 0.616);
+    background-color: rgba(0, 0, 0, 0.685);
     cursor: pointer;
-    padding: 20px;
+    padding: 30px;
     overflow-y: auto;
     display: none;
-}
-
-.modal__main {
+  }
+  
+  .modal__main {
     position: relative;
     max-width: 600px;
-    background-color: #e2dfdf;
+    background-color: #fff;
     margin: auto;
-    border-radius: 15px;
-    padding: 30px;
+    color: #000;
+    border-radius: 16px;
+    padding: 30px 60px 60px;
     cursor: default;
-}
-
-.modal__title {
+  }
+  
+  .modal__title {
+    font-size: 30px;
     margin-bottom: 30px;
-}
-
-.modal__close {
+  }
+  
+  .modal__container {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .modal__close {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-style: 30px;
+    font-size: 22px;
     position: absolute;
-    top: 20px;
-    right: 20px;
-
-}
+    top: 10px;
+    right: 10px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  
 
 @media (max-width: 1150px){
     .headDesc {
