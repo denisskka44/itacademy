@@ -38,6 +38,38 @@ li {
     flex-wrap: wrap;
 }
 
+.visit {
+    width: 50%;
+    font-size: 14px; 
+    margin-left: 5%; 
+    color: rgb(110, 110, 110);
+}
+.visit2 {
+    width: 50%;
+    font-size: 14px;
+    margin-right: 5%;
+    text-align: right; 
+    margin-left: 5%; 
+    color: rgb(110, 110, 110);
+}
+.visit3 {
+    width: 50%;
+    font-size: 14px;
+    margin-bottom: 5%;
+    text-align: right; 
+    margin-left: 5%; 
+    color: rgb(110, 110, 110);
+}
+.visit4 {
+    width: 50%;
+    font-size: 14px; 
+    margin-bottom: 5%;
+    color: rgb(110, 110, 110);
+}
+.VisitInf {
+    display: flex;
+}
+
 .headingNews {
     text-align: left; 
     padding-top: 2%; 
@@ -49,6 +81,24 @@ li {
     margin: 0 auto;
     
 }
+.headingNews2 {
+    text-align: left; 
+    padding-top: 2%; 
+    padding-left: 2%;
+    padding-bottom: 2%;
+    font-size: 35px; 
+    font-weight: bold; 
+    color: #303030;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.afisha {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
 .pict {
     max-width: 100%;
@@ -57,7 +107,7 @@ li {
 .description {
     width: 90%;
     margin: 0 auto;
-    height: 100px;
+    height: 110px;
     margin-top: 10%; 
     padding-top: 5%;
     text-align: justify; 
@@ -141,12 +191,25 @@ img {
     padding: 50px; 
     justify-content: center;
 }
+.awards2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .imgAwards {
     width: 250px;
-    height: 310px; 
+    height: 330px; 
     margin: 0 auto;
     overflow: hidden; 
+}
+.imgA {
+    width: 350px;
+    margin: 0 auto;
+    overflow: hidden; 
+    padding: 10px;
 }
 .imageA {
     max-width: 100%; 
@@ -164,7 +227,16 @@ img {
     font-weight: bold; 
     color: #3b3b3b; 
     text-align: center;
+    transition: transform 1s;
 }
+.testA2:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    text-shadow: 1px 1px 2px red, 0 0 6em blue, 0 0 0.2em blue;
+}
+
+
+
 .videoBlock {
     margin-left: auto;
     margin-right: auto;
@@ -298,12 +370,30 @@ img {
    outline-offset: 3px;
    transition: background-color .2s ease-in-out, color .2s ease-in-out;    
 }
+.selection__but {
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   background-color: transparent;
+   border: 2px solid #264e94;
+   color: #264e94;
+   font-weight: 700;
+   padding: 10px 20px;
+   cursor: pointer;
+   outline: 2px solid transparent;
+   outline-offset: 3px;
+   transition: background-color .2s ease-in-out, color .2s ease-in-out;    
+}
  
 .selection__button:hover {
     background-color: #264e94;
     color: #e2dfdf;
 }
 
+.selection__but:hover {
+    background-color: #264e94;
+    color: #e2dfdf;
+}
 .modal {
     position: fixed;
     inset: 0;
@@ -360,6 +450,93 @@ img {
     height: 30px;
   }
   
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #a19d9d;
+    padding: 30px 10px 30px 10px;
+}
+.iconFooter {
+    width: 7%;
+    cursor: pointer;
+}
+.footerLeft {
+    width: 25%;
+    padding-left: 1%;
+}
+.footerCenter {
+    width: 50%;
+    text-align: center;
+}
+.footerRight {
+    width: 25%;
+    text-align: center;
+}
+.footerButton {
+   font-family: 'Exo 2', sans-serif;
+   background-color: transparent;
+   border: 2px solid #b30a0a;
+   color: #b30a0a;
+   font-weight: 700;
+   padding: 10px 20px;
+   cursor: pointer;
+   outline: 2px solid transparent;
+   outline-offset: 3px;
+   transition: background-color .2s ease-in-out, color .2s ease-in-out; 
+}
+
+.footerButton:hover {
+    background-color: #b30a0a;
+    color: #e2dfdf;
+}
+form {
+    background-color:#ffffff;
+    width:100%;
+    margin:0 auto;
+    }
+.form3 {
+    width: 100%;
+    height: 100px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    padding: 5px;
+}
+.form2 {
+    width: 100%;
+    height: 30px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    padding: 2px;
+}
+.form1 {
+    width: 450px;
+}
+.formBut {
+   font-family: 'Exo 2', sans-serif;
+   background-color: transparent;
+   border: 2px solid #264e94;
+   color: #264e94;
+   font-weight: 700;
+   padding: 10px 20px;
+   text-align: center;
+   cursor: pointer;
+   outline: 2px solid transparent;
+   outline-offset: 3px;
+   transition: background-color .2s ease-in-out, color .2s ease-in-out; 
+}
+.formBut:hover {
+    background-color: #264e94;
+    color: #e2dfdf;
+}
+
+.divBut {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 
 @media (max-width: 1150px){
     .headDesc {
@@ -478,6 +655,24 @@ img {
 .videoBlock{
     width: 300px;
     height: 180px;
+}
+.form1 {
+    width: 300px;
+}
+.footer {
+    display: block;
+}
+.footerLeft {
+    width: 100%;
+    text-align: center;
+}
+.footerRight {
+    width: 100%;
+    text-align: center;
+}
+.footerCenter {
+    width: 100%;
+    padding: 20px;
 }
 }
 @-webkit-keyframes fade {
