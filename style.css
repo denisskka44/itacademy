@@ -26,6 +26,21 @@ li {
     list-style: none;
 }
 
+.idTop {
+    position: fixed; 
+    z-index: 9; 
+    left: 25px;
+    bottom: 25px;
+    height: 50px;
+    color: #8d0943;
+    font-weight: bold;
+    font-size: 22px;
+
+   }
+.idTop:hover {
+    color: #264e94;
+   }
+
 .map {
     padding: 5px 20px;
     background-color: #e2dfdf;
@@ -133,6 +148,15 @@ li {
     padding-top: 5%;
     text-align: justify; 
     border-top: 2px solid #2a2a2a57;
+    font-weight: bold;
+}
+
+.textPrice {
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    margin-top: 7%; 
+    text-align: justify; 
     font-weight: bold;
 }
 
@@ -289,12 +313,21 @@ img {
     overflow: hidden;
 }
 
+.windowPrice {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+
 .window .bNews:hover {
 
     cursor: pointer;
     background-color: #8d0943;
     color: #e2dfdf;
 }
+
 
 .stadion {
     width: 25%;
@@ -390,6 +423,43 @@ img {
     top: -7px;
 }
 
+.price {
+    margin-left: 5%;
+}
+.priceColor {
+    color: #8d0943;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.availability {
+    color: #264e94;
+    font-weight: bold;
+}
+.notavailability {
+    color: #b30a0a;
+    font-weight: bold;
+}
+
+.buttonPrice {
+    font-family: 'Exo 2', sans-serif;
+    margin: 5%;
+   background-color: #264e94;
+   border: 2px solid #264e94;
+   border-radius: 20px;
+   color: #c2c2c2;
+   font-size: 16px;
+   font-weight: bold;
+   padding: 10px 20px;
+   cursor: pointer;
+   transition: background-color .1s ease-in-out, color .1s ease-in-out;    
+}
+
+.buttonPrice:hover {
+    background-color: #8d0943;
+    border: 2px solid #8d0943;
+    color: #c2c2c2;
+}
 
 .selection__button {
     font-family: 'Exo 2', sans-serif;
@@ -587,6 +657,75 @@ form {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.basket {
+    justify-content: center; 
+    padding-top: 2%; 
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.baskInp {
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #8d0943;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #c2c2c2;
+    background-color: #c2c2c2;
+    border-radius: 25px;
+}
+
+.basketSRT {
+    width: 50px;
+}
+.imgBas {
+    width: 60px;
+}
+
+.butBas {
+    width: 200px;
+}
+.clearBasket {
+    height: 50px;
+    width: 180px;
+    background-color: #8d0943;
+    border: 2px solid #8d0943;
+    color: #f3f3f3;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.textOk {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.arrange {
+    height: 50px;
+    width: 180px;
+    background-color: #264e94;
+    border: 2px solid #264e94;
+    color: #f3f3f3;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 .categories {
     text-align: center; 
     padding-top: 2%; 
@@ -606,6 +745,9 @@ form {
     }
     .textDesc {
         font-size: 12px;
+    }
+    .idTop {
+        display: none;
     }
 }
 @media (max-width: 1000px){
@@ -735,6 +877,19 @@ form {
 .footerCenter {
     width: 100%;
     padding: 20px;
+}
+.basket {
+    display: block;
+}
+.imgBas {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+.butBas {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
 }
 }
 @-webkit-keyframes fade {
