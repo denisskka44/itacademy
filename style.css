@@ -651,7 +651,7 @@ form {
     text-align: center; 
     padding-top: 2%; 
     padding-left: 2%;
-    font-size: 2.7vw; 
+    font-size: 40px; 
     font-weight: bold; 
     color: #303030;
     max-width: 1200px;
@@ -737,8 +737,108 @@ form {
     margin: 0 auto;
 }
 
+.headPoster {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.imfFotPoster {
+    width: 100%;
+}
 
+.textHeadPoster {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.posterBlock {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.posterBlockImage {
+    width: 120px;
+    transition: transform 0.5s;
+}
+.posterBlockImage:hover {
+    transform: scale(1.2);
+}
+
+.VS {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    margin: auto 0;
+    color: #2a2a2a;
+}
+.posterBlockItem {
+    display: flex;
+    justify-content: center;
+}
+.home {
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.guest {
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    color: #0a8514;
+    margin-top: 15px;
+}
+.tour {
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 20px;
+    color: #264e94;
+    font-weight: bold;
+}
+.posterDate {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: #264e94;
+    font-weight: bold;    
+}
+.posterTime {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #8d0943;
+    font-weight: bold;  
+}
+.priceButton {
+    width: 100%;
+    text-align: center;
+}
+.link {
+    width: 200px;
+    font-size: 19px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #0a8514;
+    border: 2px solid #0a8514;
+    border-radius: 20px;
+    color: #181717;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.link:hover {
+    background-color: #eccd1c;
+    border: 2px solid #eccd1c;
+    color: #181717;
+    cursor: pointer;
+}
 @media (max-width: 1150px){
     .headDesc {
         font-size: 18px; 
