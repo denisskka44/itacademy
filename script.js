@@ -1,15 +1,17 @@
-const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
-  const buttonElems = document.querySelectorAll(btnOpen);
+const modalController = ({modal, btnOpen, btnClose, time = 300}) => { //Получаем все кнопки с текущим классом, ведёт поиск в документе по селектору
+  const buttonElems = document.querySelectorAll(btnOpen); //Получаем Модальное окно
   const modalElem = document.querySelector(modal);
 
-  modalElem.style.cssText = `
+//Переписываем стили для modalElem
+
+  modalElem.style.cssText = ` 
     display: flex;
     visibility: hidden;
     opacity: 0;
     transition: opacity ${time}ms ease-in-out;
   `;
-
-  const closeModal = event => {
+//закрытие модального окна при нажатии на крестик или на пустое место
+  const closeModal = event => { 
     const target = event.target;
 
     if (
@@ -27,20 +29,21 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
       window.removeEventListener('keydown', closeModal);
     }
   }
-
+//Функция которая открывает модальное окно
   const openModal = () => {
-    modalElem.style.visibility = 'visible';
-    modalElem.style.opacity = 1;
+    modalElem.style.visibility = 'visible';   //видимость модального окна
+    modalElem.style.opacity = 1;    //видимость модального окна
     window.addEventListener('keydown', closeModal)
   };
-
+  
+ //Открытие модального окна при нажатии на кнопку  
   buttonElems.forEach(btn => {
     btn.addEventListener('click', openModal);
   });
-
+//закрытие модального окна при нажатии на Х
   modalElem.addEventListener('click', closeModal);
 };
-
+//Функция принимает параметры для модального окна
 modalController({
   modal: '.modal3',
   btnOpen: '.section__button3',
